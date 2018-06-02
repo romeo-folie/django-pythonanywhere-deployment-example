@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>WELCOME TO RELATIVE URL TEMPLATES</h1>
+  <!-- <a href="basic_app/other.html">THE OTHER PAGE</a> -->
+
+  <a href="{% url 'basic_app:other' %}">THE OTHER PAGE</a>
+  <!-- Make sure to never leave a space in the url value in the single quotes specified above -->
+  <a href="{% url 'admin:index' %}">ADMIN PAGE</a>
+  <a href="{% url 'index' %}">HOME</a>
+  
+</body>
+</html>
